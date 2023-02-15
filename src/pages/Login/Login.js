@@ -18,6 +18,7 @@ const handleSubmit = (e) => {
             pass: password
         }
 
+        console.log(user);
         
         setEmail("");
         setPassword("");
