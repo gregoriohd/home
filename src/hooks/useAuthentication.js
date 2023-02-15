@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 export const useAuthentication = (url) =>{
 
-    const [data, setData]= useState(null);
+    const [data]= useState(null);
     const [config, setConfig] = useState(null);
     const [method, setMethod] = useState(null);
 
@@ -31,7 +31,7 @@ export const useAuthentication = (url) =>{
             }
         }
         httpRequest();
-    }, [config, method, url])
+    }, [config, method, url, callFetch])
 
     return {data, httpConfig}
 }
