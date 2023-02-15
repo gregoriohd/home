@@ -1,0 +1,9 @@
+.home{
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: bisque;
+        font-weight: bold;
+        font-size: 40px;
+}

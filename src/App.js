@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
+import Post from './pages/Post/Post';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <div className='container'>
           <Routes>
              <Route path='/' element={<Home />}/>
+             <Route path='/post' element={<Post />}/>
              <Route path='/login' element={<Login />}/>
-               <Route path='/cadastro' element={<Register />}/>
+             <Route path='/cadastro' element={<Register />}/>
              <Route path='/about' element={<About />}/>
           </Routes>
         </div>
