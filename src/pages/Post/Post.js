@@ -1,5 +1,3 @@
-import styles from './Post'
-
 const Post = () => {
   return (
     <div>
