@@ -12,7 +12,7 @@ const Register = () => {
 
     const [error, setError] = useState("");
 
-    const url = 'http://localhost:3000/user';
+    const url = 'https://gregoriohd.cyclic.app/user';
 
     const {httpConfig} = useAuthentication(url);
 
