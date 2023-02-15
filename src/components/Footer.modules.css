@@ -1,0 +1,17 @@
+footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf3f6;
+}
+
+footer > h3 {
+    margin-bottom: 0;
+}
+
+footer div a{
+    margin-left: 2em;
+    align-items: center;
+}
