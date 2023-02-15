@@ -1,19 +1,4 @@
-.App {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.container{
+    min-height: 60vh;
+    margin-bottom: 5em;
 }
-
-.App > img{
-    margin-bottom: 0;
-}
-
-.App h2{
-    margin-top: 0;
-}
-
-.App > div a{
-    padding: 20px;
-}
-
-

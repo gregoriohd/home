@@ -1,24 +1,33 @@
 import './App.css';
 
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+
 function App() {
   return (
     <div className="App">
-     <h1>EM CONSTRUÇÃO!</h1>
-     <img src="img/soft.jpg" alt="contrução" width="900" height="250"/>
-     <h2>Siga-me nas redes</h2>
-     <div className="pages">
-          
-           <a href="https://www.linkedin.com/in/gregorio-santos/">
-              <img src="img/linkedin.jpg" alt="linkedin" width="48" height="48" />
-            </a>
-
-          <a href="https://github.com/gregoriohd">
-            <img src="img/github.png" alt="github" width="48" height="48" />
-          </a>   
-
-      </div>
+      <BrowserRouter>
+        <Navbar />
+        <div className='container'>
+          <Routes>
+             <Route path='/' element={<Home />}/>
+             <Route path='/login' element={<Login />}/>
+               <Route path='/cadastro' element={<Register />}/>
+             <Route path='/about' element={<About />}/>
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
