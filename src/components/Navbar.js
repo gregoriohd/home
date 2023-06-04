@@ -18,9 +18,9 @@ const Navbar = () => {
             <li>
                 <NavLink to='/post' className={({isActive}) => (isActive ? styles.active : '') }>Posts</NavLink>
             </li>
-             <li>
+             {/*<li>
                 <NavLink to='/cadastro' className={({isActive}) => (isActive ? styles.active : '') }>Cadastro</NavLink>
-            </li>
+            </li> */}
             <li>
                 <NavLink to='/about' className={({isActive}) => (isActive ? styles.active : '') }>Sobre</NavLink>
             </li>
